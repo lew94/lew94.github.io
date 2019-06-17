@@ -1,0 +1,51 @@
+	<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Google Maps API</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://kit.fontawesome.com/ca41104ac0.js"></script>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+
+    <div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode">
+      <option value="DRIVING">Driving</option>
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+
+    </div>
+    <div id="destination-panel">
+              <b>Destination: </b>
+        <select id="destination">
+    <option value="Google Dublin">Google Dublin</option>
+      <option value="Buckingham Palace">Buckingham Palace</option>
+      <option value="Google London">Google London</option>
+      <option value="KFC Dublin">KFC Dublin</option>
+    </select>
+      </div>
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUzZdi2LgA2zI5o2bBSqJvuV-bEEkfZpU&callback=initMap">
+    </script>
+</body>
+
+</html>
